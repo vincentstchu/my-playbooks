@@ -1,0 +1,10 @@
+---
+- name: SSH push hosts_ip to all servers & excute script
+  hosts: all servers
+  connection: ssh
+  romote_user: devops
+  tasks:
+    - name: push file
+      copy: src=~/hosts_ip dest=~/ force=yes
+    - name: excute script to enable SSH without ec2_win_password
+      script: ~/sshall.sh
