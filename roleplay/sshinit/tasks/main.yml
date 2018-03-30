@@ -1,0 +1,6 @@
+---
+# tasks file for sshinit
+- name: push hosts_ip file
+  copy: src=~/hosts_ip dest=~/ force=yes
+- name: ssh servers without passwd
+  script: ~/sshall.sh

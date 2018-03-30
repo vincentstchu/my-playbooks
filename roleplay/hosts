@@ -1,0 +1,4 @@
+[webservers]
+139.219.104.235 ansible_ssh_user=devopsvince
+40.125.173.186 ansible_ssh_user=devopsvince
+40.125.205.70 ansible_ssh_user=devopsvince

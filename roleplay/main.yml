@@ -1,0 +1,15 @@
+---
+- name: install some softweares
+  hosts: webservers
+  remote_user: devopsvince
+  become: yes
+  
+  roles:
+  - installer
+
+- name: enable ssh without passwd
+  hosts: webservers
+  remote_user: devopsvince
+  
+  roles:
+  - sshinit

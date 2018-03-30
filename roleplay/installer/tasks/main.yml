@@ -1,0 +1,8 @@
+---
+# tasks file for installer
+- name: Install libselinux-python
+  yum: name=libselinux-python
+- name: Install tcl
+  yum: name=tcl state=present
+- name: Install expect
+  yum: name=expect state=present
